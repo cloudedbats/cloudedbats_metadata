@@ -2,7 +2,7 @@
 
 This is a part of CloudedBats: http://cloudedbats.org
 
-**Note: Software development is not yet started.**
+**Note: Software development for this library is not yet started.**
 
 ## metadata4bats
 
