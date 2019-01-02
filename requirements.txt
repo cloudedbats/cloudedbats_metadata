@@ -1,0 +1,3 @@
+
+# GUANO, Metadata for bat recordings (from https://github.com/riggsd/guano-py).
+guano
