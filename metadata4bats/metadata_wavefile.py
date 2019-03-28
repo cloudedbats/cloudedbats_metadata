@@ -50,5 +50,9 @@ class MetadataWavefile(metadata4bats.MetadataBase):
             self.set_field('rec_sampwidth', self.sampwidth)
             self.set_field('rec_framerate', self.framerate)
             self.set_field('rec_nframes', self.nframes)
+            #
+            lenght_s = int(self.nframes) / int(self.framerate)
+            self.set_field('rec_lenght_s', lenght_s)
+            #
         except:
             pass
