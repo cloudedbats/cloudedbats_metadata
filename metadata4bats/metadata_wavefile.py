@@ -51,8 +51,15 @@ class MetadataWavefile(metadata4bats.MetadataBase):
             self.set_field('rec_framerate', self.framerate)
             self.set_field('rec_nframes', self.nframes)
             #
-            lenght_s = int(self.nframes) / int(self.framerate)
-            self.set_field('rec_lenght_s', lenght_s)
+            if int(self.framerate > 90000):
+                frame_rate_hz = self.framerate
+                lenght_s = int(self.nframes) / int(self.framerate)
+            else:
+                # Probably time division by a factor of 10.
+                frame_rate_hz = self.framerate * 10
+                lenght_s = int(self.nframes) / int(self.framerate) / 10
+            self.set_field('rec_frame_rate_hz', self.framerate)
+            self.set_field('rec_lenght_s', int(lenght_s))
             #
         except:
             pass
