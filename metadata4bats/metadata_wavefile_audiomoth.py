@@ -7,7 +7,6 @@
 import re
 import datetime
 import dateutil.parser
-import pprint
 
 import metadata4bats
 
@@ -69,6 +68,8 @@ class MetadataWavefileAudiomoth(metadata4bats.MetadataWavefile):
 
 if __name__ == '__main__':
     """ """
+    import pprint
+    
     print('CloudedBats - metadata - test')
 
     mw = MetadataWavefileAudiomoth('/home/arnold/Desktop/batfiles', 

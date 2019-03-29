@@ -5,8 +5,6 @@
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
 import re
-import dateutil.parser
-import pprint
 
 import metadata4bats
 
@@ -100,6 +98,8 @@ class MetadataWavefileWurb(metadata4bats.MetadataWavefile):
 
 if __name__ == '__main__':
     """ """
+    import pprint
+    
     print('CloudedBats - metadata - test')
 
     mw = MetadataWavefileWurb('/home/arnold/Desktop/batfiles', 
